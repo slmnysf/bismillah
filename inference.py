@@ -107,7 +107,9 @@ food_data = pd.read_csv(food_data_path)
 categories = ['Breakfast', 'Lunch', 'Dinner', 'Snack 1', 'Snack 2']
 
 
-
+@app.route("/")
+def hello_world():
+    return "api alive!"
 @app.route("/" , methods=["POST"])
 def home(): 
   
